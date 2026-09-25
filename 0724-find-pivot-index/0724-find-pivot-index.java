@@ -26,7 +26,7 @@ class Solution {
         }
         rights=total;
         for(int i=0;i<nums.length;i++){
-            rights-=nums[i];
+            rights=rights-nums[i];
             if(lefts==rights){
                 return i;
             }
